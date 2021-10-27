@@ -1,0 +1,2 @@
+-- start lualine
+-- require('lualine').setup()
