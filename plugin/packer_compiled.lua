@@ -69,9 +69,57 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/Comment.nvim"
+  },
+  LuaSnip = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/LuaSnip"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
+  },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/friendly-snippets"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/lualine.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -80,10 +128,23 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/packer.nvim"
+  },
+  ["rose-pine"] = {
+    config = { "\27LJ\1\2b\0\0\2\0\6\0\t4\0\0\0007\0\1\0%\1\3\0:\1\2\0004\0\0\0007\0\4\0%\1\5\0>\0\2\1G\0\1\0\26colorscheme rose-pine\bcmd\tdawn\22rose_pine_variant\6g\bvim\0" },
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/rose-pine"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\1\2b\0\0\2\0\6\0\t4\0\0\0007\0\1\0%\1\3\0:\1\2\0004\0\0\0007\0\4\0%\1\5\0>\0\2\1G\0\1\0\26colorscheme rose-pine\bcmd\tdawn\22rose_pine_variant\6g\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 if should_profile then save_profiles() end
 
 end)
