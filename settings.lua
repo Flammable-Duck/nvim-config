@@ -10,6 +10,7 @@ vim.opt.termguicolors = true
 vim.o.nu = true
 vim.opt.undofile = true -- save undo history
 vim.g.viewoptions = {'cursor','folds'}
+vim.o.completeopt = 'menuone,noselect'
 
 -- colortheme settings
 vim.g.rose_pine_variant = 'dawn'

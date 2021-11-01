@@ -73,17 +73,49 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/Comment.nvim"
   },
+  LuaSnip = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/LuaSnip"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -93,6 +125,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
+  ["pears.nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/pears.nvim"
+  },
   ["rose-pine"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/rose-pine"
@@ -100,6 +136,10 @@ _G.packer_plugins = {
   ["tidy.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/tidy.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/toggleterm.nvim"
   }
 }
 
