@@ -73,45 +73,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/Comment.nvim"
   },
-  LuaSnip = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/LuaSnip"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
   },
-  ["cmp-nvim-lsp"] = {
+  ["coq.artifacts"] = {
     loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/coq.artifacts"
   },
-  cmp_luasnip = {
+  coq_nvim = {
     loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
-  },
-  ["dashboard-nvim"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/dashboard-nvim"
-  },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/friendly-snippets"
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/coq_nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-cmp"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -134,9 +110,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/rose-pine"
   },
-  ["telescope.nvim"] = {
+  ["tidy.nvim"] = {
     loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/tidy.nvim"
   }
 }
 

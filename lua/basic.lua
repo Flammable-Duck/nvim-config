@@ -20,3 +20,6 @@ vim.api.nvim_set_keymap('n', 'H', ':BufferLineCyclePrev<CR>', {noremap = true, s
 
 -- nvim-tree settings
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+
+-- coq keybinds
+vim.g.coq_settings = { auto_start = "shut-up" }
