@@ -9,7 +9,7 @@ vim.o.autoindent = true
 vim.opt.termguicolors = true
 vim.o.nu = true
 vim.opt.undofile = true -- save undo history
-vim.g.viewoptions = {'cursor','folds'}
+vim.g.viewoptions = {'cursor,folds'}
 vim.o.completeopt = 'menuone,noselect'
 
 -- colortheme settings
