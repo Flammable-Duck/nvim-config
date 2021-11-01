@@ -77,14 +77,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
   },
-  ["coq.artifacts"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/coq.artifacts"
-  },
-  coq_nvim = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/coq_nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/lualine.nvim"
@@ -92,10 +84,6 @@ _G.packer_plugins = {
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -106,7 +94,6 @@ _G.packer_plugins = {
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
   ["rose-pine"] = {
-    config = { "\27LJ\1\2b\0\0\2\0\6\0\t4\0\0\0007\0\1\0%\1\3\0:\1\2\0004\0\0\0007\0\4\0%\1\5\0>\0\2\1G\0\1\0\26colorscheme rose-pine\bcmd\tdawn\22rose_pine_variant\6g\bvim\0" },
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/rose-pine"
   },
@@ -117,10 +104,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\1\2b\0\0\2\0\6\0\t4\0\0\0007\0\1\0%\1\3\0:\1\2\0004\0\0\0007\0\4\0%\1\5\0>\0\2\1G\0\1\0\26colorscheme rose-pine\bcmd\tdawn\22rose_pine_variant\6g\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 if should_profile then save_profiles() end
 
 end)
