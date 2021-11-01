@@ -2,7 +2,7 @@
 require("toggleterm").setup{
     on_config_done = nil,
     -- size can be a number or function which is passed the current terminal
-    size = 40,
+    size = 60,
     -- open_mapping = [[<c-\>]],
     open_mapping = [[<c-t>]],
     hide_numbers = true, -- hide the number column in toggleterm buffers

@@ -27,6 +27,7 @@ require('packer').startup(function()
     use { 'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}} -- Statusline
     use 'nvim-treesitter/nvim-treesitter' -- treesitter
     use 'nvim-treesitter/nvim-treesitter-textobjects' -- textobjects for treesitter
+    use 'lukas-reineke/indent-blankline.nvim' -- indentation lines
 
 -- LSP & autocomplete
     use 'neovim/nvim-lspconfig' -- configs for built in LSP
@@ -46,6 +47,7 @@ require('packer').startup(function()
     use "steelsojka/pears.nvim" -- autosurround
     use {'McAuleyPenney/tidy.nvim'} -- Clear trailing whitespace and empty lines at end of file on every save
     use {"akinsho/toggleterm.nvim"} -- terminal
+    use "ahmedkhalf/project.nvim" -- project managment
 
 end)
 
@@ -61,3 +63,4 @@ require('nvim-tree').setup()
 require('pluginconf.cmp_config')
 require('Comment').setup()
 require("pears").setup()
+require("project_nvim").setup()

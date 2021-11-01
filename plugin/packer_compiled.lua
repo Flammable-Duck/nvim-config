@@ -89,6 +89,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp_luasnip"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/lualine.nvim"
@@ -128,6 +132,10 @@ _G.packer_plugins = {
   ["pears.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/pears.nvim"
+  },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "/home/duck/.local/share/nvim/site/pack/packer/start/project.nvim"
   },
   ["rose-pine"] = {
     loaded = true,
