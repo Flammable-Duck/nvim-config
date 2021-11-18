@@ -1,6 +1,3 @@
-require('settings')
-require('keybinds')
-
 -- Packer setup
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
 
@@ -17,6 +14,10 @@ vim.api.nvim_exec(
 ]],
   false
 )
+
+-- load other config files
+require('settings')
+require('keybinds')
 
 -- plugins
 local use = require('packer').use
@@ -47,9 +48,10 @@ require('packer').startup(function()
     use "steelsojka/pears.nvim" -- autosurround
     use {'McAuleyPenney/tidy.nvim'} -- Clear trailing whitespace and empty lines at end of file on every save
     use {"akinsho/toggleterm.nvim"} -- terminal
-    use "ahmedkhalf/project.nvim" -- project managment
+    -- use "ahmedkhalf/project.nvim" -- project managment
 
 end)
+
 
 
 -- load plugin config files
@@ -64,4 +66,4 @@ require('nvim-tree').setup()
 require('pluginconf.cmp_config')
 require('Comment').setup()
 require("pears").setup()
-require("project_nvim").setup()
+-- require("project_nvim").setup()

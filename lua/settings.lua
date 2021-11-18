@@ -12,6 +12,7 @@ vim.opt.undofile = true -- save undo history
 vim.g.viewoptions = 'cursor,folds'
 vim.api.nvim_exec([[set viewoptions-=options]], false)
 vim.o.completeopt = 'menuone,noselect'
+vim.opt.mouse = 'a'
 
 -- colortheme settings
 vim.g.rose_pine_variant = 'dawn'
