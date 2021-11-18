@@ -32,6 +32,9 @@ require('packer').startup(function()
 
 -- LSP & autocomplete
     use {'neoclide/coc.nvim', branch = 'release'}
+    use { 'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
 
 -- navigation
     use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}

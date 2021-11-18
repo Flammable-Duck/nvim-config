@@ -18,6 +18,8 @@ vim.opt.mouse = 'a'
 vim.g.rose_pine_variant = 'dawn'
 vim.cmd('colorscheme rose-pine')
 
+vim.wo.colorcolumn = '80'
+
 -- remember folds
 vim.api.nvim_exec(
   [[
