@@ -8,17 +8,19 @@ vim.o.autoindent = true
 --general settings
 vim.opt.termguicolors = true
 vim.o.nu = true
+vim.o.rnu = true
 vim.opt.undofile = true -- save undo history
 vim.g.viewoptions = 'cursor,folds'
 vim.api.nvim_exec([[set viewoptions-=options]], false)
 vim.o.completeopt = 'menuone,noselect'
 vim.opt.mouse = 'a'
 
+
 -- colortheme settings
 vim.g.rose_pine_variant = 'dawn'
 vim.cmd('colorscheme rose-pine')
 
-vim.wo.colorcolumn = '80'
+-- vim.wo.colorcolumn = '0'
 
 -- remember folds
 vim.api.nvim_exec(

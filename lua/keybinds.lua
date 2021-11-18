@@ -2,6 +2,7 @@
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<Leader>w', ':write<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<Leader>x', ':bd<CR>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<Leader>l', ':set rnu!<CR>', {noremap = true})
 
 -- nvim-tree keybinds
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
