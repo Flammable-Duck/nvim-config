@@ -31,12 +31,7 @@ require('packer').startup(function()
     use 'lukas-reineke/indent-blankline.nvim' -- indentation lines
 
 -- LSP & autocomplete
-    use 'neovim/nvim-lspconfig' -- configs for built in LSP
-    use 'williamboman/nvim-lsp-installer' -- install lsp servers
-    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-    use 'hrsh7th/cmp-nvim-lsp' -- completion source for cmp
-    use 'saadparwaiz1/cmp_luasnip' -- snippets completion source
-    use 'L3MON4D3/LuaSnip' -- Snippets plugin
+    use {'neoclide/coc.nvim', branch = 'release'}
 
 -- navigation
     use {'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons'}
@@ -59,11 +54,8 @@ require('pluginconf.lualine_config')
 require('pluginconf.toggleterm_config')
 require('pluginconf.bufferline_config')
 require('pluginconf.treesitter_config')
-require('pluginconf.lsp_config')
-require('pluginconf.lspinstaller_config')
 require('pluginconf.indentblankline_config')
 require('nvim-tree').setup()
-require('pluginconf.cmp_config')
 require('Comment').setup()
 require("pears").setup()
 -- require("project_nvim").setup()
