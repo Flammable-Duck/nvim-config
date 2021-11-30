@@ -1,6 +1,0 @@
-"languageserver": {
-  "nim": {
-    "command": "nimlsp",
-    "filetypes": ["nim"]
-  }
-}

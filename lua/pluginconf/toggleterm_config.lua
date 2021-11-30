@@ -14,7 +14,7 @@ require("toggleterm").setup{
     persist_size = false,
     -- direction = 'vertical' | 'horizontal' | 'window' | 'float',
     direction = "horizontal",
-    close_on_exit = true, -- close the terminal window when the process exits
+    close_on_exit = false, -- close the terminal window when the process exits
     shell = vim.o.shell, -- change the default shell
     -- This field is only relevant if direction is set to 'float'
     float_opts = {
