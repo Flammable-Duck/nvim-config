@@ -18,3 +18,7 @@ vim.api.nvim_set_keymap('n', '<Leader>fg', ':Telescope live_grep<CR>', {noremap 
 vim.api.nvim_set_keymap('n', '<Leader>fh', ':Telescope help_tags<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>fb', ':Telescope buffers<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>ft', ':Telescope treesitter<CR>', {noremap = true, silent = true})
+
+vim.api.nvim_set_keymap('n', '<Leader>gc', ':Telescope git_commits<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>gb', ':Telescope git_branches<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>gs', ':Telescope git_status<CR>', {noremap = true, silent = true})

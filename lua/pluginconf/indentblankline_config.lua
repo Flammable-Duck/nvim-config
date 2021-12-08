@@ -4,6 +4,7 @@ vim.opt.listchars:append("eol:↴")
 
 require("indent_blankline").setup {
     space_char_blankline = " ",
+    char_list = {' ', '╎'},
     show_current_context = true,
     show_current_context_start = true,
 }

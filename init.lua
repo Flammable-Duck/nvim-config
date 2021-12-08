@@ -62,7 +62,7 @@ require('packer').startup(function()
 -- editing support
     use {'numToStr/Comment.nvim'} -- Comments
     -- use "steelsojka/pears.nvim" -- autosurround
-    use {'windwp/nvim-autopairs'} --autosurround
+    use {'windwp/nvim-autopairs'} --autosurroud
     use {'McAuleyPenney/tidy.nvim'} -- Clear trailing whitespace and empty lines at end of file on every save
     use {"akinsho/toggleterm.nvim"} -- terminal
     use "ahmedkhalf/project.nvim" -- project managment
@@ -80,7 +80,7 @@ require('pluginconf.indentblankline_config')
 require('pluginconf.telescope_config')
 require('pluginconf.nvim-gps_config')
 require('pluginconf.lspconfig_config')
--- require('pluginconf.virt-colunm_config')
+require('pluginconf.virt-colunm_config')
 require('nvim-tree').setup()
 require('Comment').setup()
 require("project_nvim").setup()
