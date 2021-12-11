@@ -63,7 +63,7 @@ require("nvim-gps").setup({
 
 		-- Override default setting for particular languages
 		["ruby"] = {
-		separator = '|', -- Overrides default separator with '|'
+		-- separator = '|', -- Overrides default separator with '|'
 		icons = {
 			-- Default icons not specified in the lang config
 			-- will fallback to the default value
@@ -76,7 +76,7 @@ require("nvim-gps").setup({
 		}
 	},
 
-	separator = ' > ',
+	separator = ' ❯ ',
 
 	-- limit for amount of context shown
 	-- 0 means no limit

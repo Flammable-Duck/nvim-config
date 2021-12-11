@@ -26,6 +26,8 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim' -- Package manager
 -- visual stuff
     use {'rose-pine/neovim', as='rose-pine'} -- Color theme
+    use({ "catppuccin/nvim", as = "catppuccin" }) -- Color theme
+
     use { 'nvim-lualine/lualine.nvim', -- Statusline
         requires = {'kyazdani42/nvim-web-devicons', opt = true}}
     use {"SmiteshP/nvim-gps"}
