@@ -21,7 +21,7 @@ table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
 require'lspconfig'.sumneko_lua.setup {
-  cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
+  -- cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
   settings = {
     Lua = {
       runtime = {
@@ -72,11 +72,12 @@ require'lspconfig'.html.setup {
 vim.g.markdown_fenced_languages = {
   "ts=typescript"
 }
-require'lspconfig'.denols.setup{}
+require'lspconfig'.tsserver.setup{}
 
 -- Nim
-require'lspconfig'.nimls.setup{}
-
+require'lspconfig'.nimls.setup{
+     cmd = { "/home/duck/.nimble/pkgs/nimlsp-0.3.2/nimlsp" }
+}
 -- Bash
 require'lspconfig'.bashls.setup{}
 
@@ -85,9 +86,9 @@ require'lspconfig'.bashls.setup{}
 require'lspconfig'.gopls.setup{}
 
 -- LTeX
-require'lspconfig'.ltex.setup{
-    cmd = { '/home/duck/.cache/nvim/lspconfig/ltex-ls/ltex-ls-15.1.0/bin/ltex-ls' };
-}
+-- require'lspconfig'.ltex.setup{
+--     cmd = { '/home/duck/.cache/nvim/lspconfig/ltex-ls/ltex-ls-15.1.0/bin/ltex-ls' };
+-- }
 
 
 -------------------------------------------------------------------------------
@@ -99,7 +100,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { 'rust_analyzer', 'pyright', 'tsserver', 'solargraph', 'gopls', 'denols' }
+local servers = { 'rust_analyzer', 'pyright', 'tsserver', 'solargraph', 'gopls'}
 for _, lsp in ipairs(servers) do
   require('lspconfig')[lsp].setup {
     -- on_attach = my_custom_on_attach,
