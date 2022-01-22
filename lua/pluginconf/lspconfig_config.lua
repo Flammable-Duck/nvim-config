@@ -13,15 +13,15 @@ else
 end
 
 -- set the path to the sumneko installation; if you previously installed via the now deprecated :LspInstall, use
-local sumneko_root_path = vim.fn.stdpath('cache')..'/lspconfig/sumneko_lua/lua-language-server'
-local sumneko_binary = sumneko_root_path.."/bin/"..system_name.."/lua-language-server"
+local sumneko_root_path = vim.fn.stdpath('cache')..'/lua-language-server'
+local sumneko_binary = sumneko_root_path.."/bin/lua-language-server"
 
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
 require'lspconfig'.sumneko_lua.setup {
-  -- cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
+  cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
   settings = {
     Lua = {
       runtime = {
@@ -75,9 +75,9 @@ vim.g.markdown_fenced_languages = {
 require'lspconfig'.tsserver.setup{}
 
 -- Nim
-require'lspconfig'.nimls.setup{
-     cmd = { "/home/duck/.nimble/pkgs/nimlsp-0.3.2/nimlsp" }
-}
+-- require'lspconfig'.nimls.setup{
+--      cmd = { "/home/duck/.nimble/pkgs/nimlsp-0.3.2/nimlsp" }
+-- }
 -- Bash
 require'lspconfig'.bashls.setup{}
 
@@ -86,9 +86,12 @@ require'lspconfig'.bashls.setup{}
 require'lspconfig'.gopls.setup{}
 
 -- LTeX
--- require'lspconfig'.ltex.setup{
---     cmd = { '/home/duck/.cache/nvim/lspconfig/ltex-ls/ltex-ls-15.1.0/bin/ltex-ls' };
--- }
+require'lspconfig'.ltex.setup{
+    -- cmd = { '/home/duck/.cache/nvim/lspconfig/ltex-ls/ltex-ls-15.1.0/bin/ltex-ls' };
+}
+
+-- C++
+require'lspconfig'.clangd.setup{}
 
 
 -------------------------------------------------------------------------------
