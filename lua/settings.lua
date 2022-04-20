@@ -6,7 +6,6 @@ vim.o.softtabstop = 4
 vim.o.autoindent = true
 
 --general settings
-vim.opt.termguicolors = true
 vim.o.nu = true
 vim.o.rnu = true
 vim.o.wrap = false
@@ -14,8 +13,13 @@ vim.opt.undofile = true -- save undo history
 vim.o.completeopt = 'menuone,noselect'
 vim.opt.mouse = 'a'
 
+-- try out filetype.lua
+vim.g.do_filetype_lua = 1
+vim.g.did_load_filetypes = 0
+
 
 -- colortheme settings
+vim.opt.termguicolors = true
 vim.g.rose_pine_variant = 'base'
 vim.cmd('colorscheme rose-pine')
 
