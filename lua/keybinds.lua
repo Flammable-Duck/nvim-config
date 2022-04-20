@@ -1,24 +1,24 @@
 -- general keybinds
 vim.g.mapleader = " "
-vim.api.nvim_set_keymap('n', '<Leader>w', ':write<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>m', ':make<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>x', ':bd<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>l', ':set rnu!<CR>', {noremap = true})
+vim.keymap.set('n', '<Leader>w', ':write<CR>')
+vim.keymap.set('n', '<Leader>m', ':make<CR>')
+vim.keymap.set('n', '<Leader>x', ':bd<CR>')
+vim.keymap.set('n', '<Leader>l', ':set rnu!<CR>')
 
 -- nvim-tree keybinds
-vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<Leader>e', ':NvimTreeToggle<CR>', {silent = true})
 
 -- buffferline.nvim keybinds
-vim.api.nvim_set_keymap('n', 'L', ':BufferLineCycleNext<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', 'H', ':BufferLineCyclePrev<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', 'L', ':BufferLineCycleNext<CR>', {silent = true})
+vim.keymap.set('n', 'H', ':BufferLineCyclePrev<CR>', {silent = true})
 
 -- telescope.nvim keybinds
-vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>fg', ':Telescope live_grep<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>fh', ':Telescope help_tags<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>fb', ':Telescope buffers<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>ft', ':Telescope treesitter<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<Leader>ff', ':Telescope find_files<CR>', {silent = true})
+vim.keymap.set('n', '<Leader>fg', ':Telescope live_grep<CR>', {silent = true})
+vim.keymap.set('n', '<Leader>fh', ':Telescope help_tags<CR>', {silent = true})
+vim.keymap.set('n', '<Leader>fb', ':Telescope buffers<CR>', {silent = true})
+vim.keymap.set('n', '<Leader>ft', ':Telescope treesitter<CR>', {silent = true})
 
-vim.api.nvim_set_keymap('n', '<Leader>gc', ':Telescope git_commits<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>gb', ':Telescope git_branches<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>gs', ':Telescope git_status<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', '<Leader>gc', ':Telescope git_commits<CR>', {silent = true})
+vim.keymap.set('n', '<Leader>gb', ':Telescope git_branches<CR>', {silent = true})
+vim.keymap.set('n', '<Leader>gs', ':Telescope git_status<CR>', {silent = true})
