@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -98,11 +93,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp-calc",
     url = "https://github.com/hrsh7th/cmp-calc"
-  },
-  ["cmp-emoji"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/cmp-emoji",
-    url = "https://github.com/hrsh7th/cmp-emoji"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -204,11 +194,6 @@ _G.packer_plugins = {
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["tidy.nvim"] = {
-    loaded = true,
-    path = "/home/duck/.local/share/nvim/site/pack/packer/start/tidy.nvim",
-    url = "https://github.com/McAuleyPenney/tidy.nvim"
-  },
   ["toggleterm.nvim"] = {
     loaded = true,
     path = "/home/duck/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
@@ -227,5 +212,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end

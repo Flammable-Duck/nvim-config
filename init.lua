@@ -26,12 +26,11 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim' -- Package manager
 -- visual stuff
     use {'rose-pine/neovim', as='rose-pine'} -- Color theme
-    use({ "catppuccin/nvim", as = "catppuccin" }) -- Color theme
 
     use { 'nvim-lualine/lualine.nvim', -- Statusline
         requires = {'kyazdani42/nvim-web-devicons', opt = true}}
     use {"SmiteshP/nvim-gps"}
-    use 'nvim-treesitter/nvim-treesitter' -- treesitter
+    -- use 'nvim-treesitter/nvim-treesitter' -- treesitter
     use 'nvim-treesitter/nvim-treesitter-textobjects' -- textobjects for treesitter
     use 'lukas-reineke/indent-blankline.nvim' -- indentation lines
     use "lukas-reineke/virt-column.nvim" -- Display a character as the colorcolumn
@@ -46,8 +45,7 @@ require('packer').startup(function()
     use { 'hrsh7th/cmp-nvim-lsp' } -- LSP source for nvim cmp
     use {'hrsh7th/cmp-buffer'} -- buffer source for nvim cmp
     use { 'hrsh7th/cmp-path' } -- filesystem paths source for nvim cmp
-    use { 'hrsh7th/cmp-path' } -- filesystem paths source for nvim cmp
-    use { 'hrsh7th/cmp-emoji' } -- emoji source for nvim cmp
+    -- use { 'hrsh7th/cmp-emoji' } -- emoji source for nvim cmp
     use { 'hrsh7th/cmp-calc' } -- math source for nvim cmp
     use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim cmp
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
@@ -65,7 +63,7 @@ require('packer').startup(function()
     use {'numToStr/Comment.nvim'} -- Comments
     -- use "steelsojka/pears.nvim" -- autosurround
     use {'windwp/nvim-autopairs'} --autosurroud
-    use {'McAuleyPenney/tidy.nvim'} -- Clear trailing whitespace and empty lines at end of file on every save
+    -- use {'McAuleyPenney/tidy.nvim'} -- Clear trailing whitespace and empty lines at end of file on every save
     use {"akinsho/toggleterm.nvim"} -- terminal
     use "ahmedkhalf/project.nvim" -- project managment
 

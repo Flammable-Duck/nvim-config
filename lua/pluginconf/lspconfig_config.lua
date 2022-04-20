@@ -1,3 +1,4 @@
+-- lspconfig language configs
 --python
 require'lspconfig'.pyright.setup{}
 -- lua
@@ -53,12 +54,15 @@ require'lspconfig'.solargraph.setup{}
 require'lspconfig'.cmake.setup{}
 
 -- CSS
--- TODO add snippets first
--- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#cssls
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+require'lspconfig'.cssls.setup {
+  capabilities = capabilities,
+}
 
 -- HTML
---  TODO add snippets first
--- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -78,6 +82,7 @@ require'lspconfig'.tsserver.setup{}
 -- require'lspconfig'.nimls.setup{
 --      cmd = { "/home/duck/.nimble/pkgs/nimlsp-0.3.2/nimlsp" }
 -- }
+
 -- Bash
 require'lspconfig'.bashls.setup{}
 
@@ -86,17 +91,24 @@ require'lspconfig'.bashls.setup{}
 require'lspconfig'.gopls.setup{}
 
 -- LTeX
-require'lspconfig'.ltex.setup{
-    -- cmd = { '/home/duck/.cache/nvim/lspconfig/ltex-ls/ltex-ls-15.1.0/bin/ltex-ls' };
-}
+require'lspconfig'.ltex.setup{}
 
 -- C++
 require'lspconfig'.clangd.setup{}
 
 
--------------------------------------------------------------------------------
+vim.diagnostic.config({
+  virtual_text = false,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = false,
+})
+
+vim.o.updatetime = 250
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+
 -- cmp config
--------------------------------------------------------------------------------
 
 -- Add additional capabilities supported by nvim-cmp
 local capabilities = vim.lsp.protocol.make_client_capabilities()
