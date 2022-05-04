@@ -13,12 +13,20 @@ vim.keymap.set('n', 'L', ':BufferLineCycleNext<CR>', {silent = true})
 vim.keymap.set('n', 'H', ':BufferLineCyclePrev<CR>', {silent = true})
 
 -- telescope.nvim keybinds
-vim.keymap.set('n', '<Leader>ff', ':Telescope find_files<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>fg', ':Telescope live_grep<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>fh', ':Telescope help_tags<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>fb', ':Telescope buffers<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>ft', ':Telescope treesitter<CR>', {silent = true})
 
-vim.keymap.set('n', '<Leader>gc', ':Telescope git_commits<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>gb', ':Telescope git_branches<CR>', {silent = true})
-vim.keymap.set('n', '<Leader>gs', ':Telescope git_status<CR>', {silent = true})
+    -- navigation
+    vim.keymap.set('n', '<Leader>ff', ':Telescope find_files<CR>', {silent = true})
+    vim.keymap.set('n', '<Leader>fg', ':Telescope live_grep<CR>', {silent = true})
+    vim.keymap.set('n', '<Leader>fb', ':Telescope buffers<CR>', {silent = true})
+    vim.keymap.set('n', '<Leader>ft', ':Telescope treesitter<CR>', {silent = true})
+
+    -- git
+    vim.keymap.set('n', '<Leader>gc', ':Telescope git_commits<CR>', {silent = true})
+    vim.keymap.set('n', '<Leader>gb', ':Telescope git_branches<CR>', {silent = true})
+    vim.keymap.set('n', '<Leader>gs', ':Telescope git_status<CR>', {silent = true})
+
+    -- misc
+    vim.keymap.set('n', '<Leader>fh', ':Telescope help_tags<CR>', {silent = true})
+    vim.keymap.set(
+        'n', '<Leader>;', ':lua require"telescope.builtin".symbols{ sources = {"emoji", "kaomoji"} }<CR>',
+        {silent = true})
