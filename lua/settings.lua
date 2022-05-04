@@ -10,8 +10,9 @@ vim.o.nu = true
 vim.o.rnu = true
 vim.o.wrap = false
 vim.opt.undofile = true -- save undo history
-vim.o.completeopt = 'menuone,noselect'
+vim.o.completeopt = 'menuone,noselect' --save folds
 vim.opt.mouse = 'a'
+vim.o.foldmethod='indent'
 
 -- try out filetype.lua
 vim.g.do_filetype_lua = 1
