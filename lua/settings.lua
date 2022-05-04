@@ -13,6 +13,7 @@ vim.opt.undofile = true -- save undo history
 vim.o.completeopt = 'menuone,noselect' --save folds
 vim.opt.mouse = 'a'
 vim.o.foldmethod='indent'
+vim.o.spelllang = "en_us"
 
 -- try out filetype.lua
 vim.g.do_filetype_lua = 1
