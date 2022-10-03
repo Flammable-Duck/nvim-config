@@ -15,11 +15,6 @@ vim.opt.mouse = 'a'
 vim.o.foldmethod='indent'
 vim.o.spelllang = "en_us"
 
--- try out filetype.lua
-vim.g.do_filetype_lua = 1
-vim.g.did_load_filetypes = 0
-
-
 -- colortheme settings
 vim.opt.termguicolors = true
 vim.g.rose_pine_variant = 'base'
