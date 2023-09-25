@@ -9,8 +9,8 @@ vim.keymap.set('n', '<Leader>l', ':set rnu!<CR>')
 vim.keymap.set('n', '<Leader>e', ':NvimTreeToggle<CR>', {silent = true})
 
 -- buffferline.nvim keybinds
-vim.keymap.set('n', 'L', ':BufferLineCycleNext<CR>', {silent = true})
-vim.keymap.set('n', 'H', ':BufferLineCyclePrev<CR>', {silent = true})
+vim.keymap.set('n', 'L', ':bnext<CR>', {silent = true})
+vim.keymap.set('n', 'H', ':bprev<CR>', {silent = true})
 
 -- telescope.nvim keybinds
 
