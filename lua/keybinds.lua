@@ -27,3 +27,9 @@ vim.keymap.set('n', 'H', ':bprev<CR>', {silent = true})
 
     -- misc
     vim.keymap.set('n', '<Leader>fh', ':Telescope help_tags<CR>', {silent = true})
+
+-- Lsp
+vim.keymap.set('n', '<Leader>e', vim.diagnostic.open_float)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
+vim.keymap.set('n', '<Leader>q', vim.diagnostic.setloclist)
