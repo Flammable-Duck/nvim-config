@@ -1,5 +1,4 @@
-return {
-    {
+return {{
         "lukas-reineke/indent-blankline.nvim",
 
         config = function()
@@ -13,5 +12,4 @@ return {
                 show_current_context_start = true,
             }
         end
-    },
-}
+}}

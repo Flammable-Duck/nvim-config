@@ -1,5 +1,4 @@
-return {
-    {
+return {{
         'rose-pine/neovim',
         name = 'rose-pine',
         config = function()
@@ -9,5 +8,4 @@ return {
             vim.opt.termguicolors = true
             vim.cmd('colorscheme rose-pine')
         end
-    }
-}
+}}
