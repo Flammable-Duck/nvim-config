@@ -15,10 +15,6 @@ vim.opt.mouse = 'a'
 vim.o.foldmethod='indent'
 vim.o.spelllang = "en_us"
 
--- colortheme settings
-vim.opt.termguicolors = true
-vim.g.rose_pine_variant = 'base'
-vim.cmd('colorscheme rose-pine')
 
 vim.wo.colorcolumn = '80'
 
