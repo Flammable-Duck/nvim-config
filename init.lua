@@ -1,5 +1,5 @@
-require("lua/keybinds")
-require("lua/settings")
+require("keybinds")
+require("settings")
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
