@@ -1,9 +1,9 @@
 return {
     {
         "neovim/nvim-lspconfig",
-        config = function()
-            local lspconfig = require('lspconfig')
-        end
+        -- config = function()
+        --     local lspconfig = require('lspconfig')
+        -- end
     },
 
     {
@@ -31,10 +31,9 @@ return {
               end,
 
               ["lua_ls"] = function ()
-                  Lua = {
-                      diagnostics = {
-                          globals = { 'vim' }
-                      }
+                  require('lspconfig').lua_ls.setup {
+                      -- prevent lua_ls from screaming at my nvim config
+                      diagnostics = {globals = { 'vim' }}
                   }
               end,
           }
